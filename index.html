@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Prince Singh Portfolio</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="Images/logo.png" class="portfolio-logo" alt="logo" height= "100px" width="100px"/>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p><span>&lt;</span> Software Developer <span>&gt;</span></Software></p>
+                <h1><span>P</span>rince <span>S</span>ingh</h1>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="Images/user.jpg" alt="user">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am a software developer who is dedicated to success through hard work and excellent organizational 
+                        and management skills. Excellent knowledge of data structures and competitive programming. I am
+                        driven to learn, grow, and excel in the developer industry. Very cool in managing situations and making
+                        the most of opportunities. My leadership abilities have enabled me to lead in every scenario.</p>
+
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>C++</span><br>Intermediate</li>
+                                <li><span>Python</span><br>Intermediate</li>
+                                <li><span>Flutter</span><br>Intermediate</li>
+                                <li><span>App Developer</span><br>Building Android/iOS Apps</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>May 2022 - Aug 2022</span>
+                                    <br><tab-content-subtitle>Moneylans</tab-content-subtitle>
+                                    <br>Developed a fast and efficient Social Debt Payoff App where users can learn
+                                    from others payoff strategies/journeys and also share their own. It was
+                                    integrated with the Firebase Realtime Database.                                    
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>Sep 2020 - Present</span>
+                                <br><tab-content-subtitle>Bachelor of Technology</tab-content-subtitle>
+                                <br>SRM INSTITUTE OF SCIENCE AND TECHNOLOGY
+                                </li>
+                                <li><span>Apr 2017 - Mar 2019</span>
+                                <br><tab-content-subtitle>Secondary Higher School</tab-content-subtitle>
+                                <br>ARMY PUBLIC SCHOOL
+                                </li>
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="projects">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="projects-list">
+                <div>
+                    <h2>Phantom Drive</h2>
+                    <p>AI-based technology aids in the prevention of accidents by warning the driver when they becomes
+                        drowsy. It is integrated with TensorFlow using Google Teachable Machines. An automated message
+                        with their current location will be sent to the SOS contacts.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <h2>WallGod</h2>
+                    <p>A wallpaper application built using Flutter Framework to fetch high quality images from the internet
+                         using Pexels RestAPI. It has all the features needed such as set, save, search wallpaper.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <h2>WeatherLens</h2>
+                    <p>A Weather forecasting App using RestAPI of VisualCrossing shows the information like current temperature, humidity, pressure, wind speed, feels like info generally.
+                        It also shows you the rate of change in temperature for the last 10 days of city.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+            <a href="https://github.com/heyprincesingh" class="btn">See more</a>
+        </div>
+    </div>
+
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+                for(tablink of tablinks){
+                    tablink.classList.remove("active-link")
+                }
+                for(tabcontent of tabcontents){
+                    tabcontent.classList.remove("active-tab")
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab")
+        }
+    </script>
+
+    </body>
+</html>
