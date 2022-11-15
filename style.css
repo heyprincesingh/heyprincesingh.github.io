@@ -312,6 +312,14 @@ form .btn2{
     cursor: pointer;
 }
 
+#counter{
+    display: flex;
+    justify-content: center;
+    font-weight: 500;
+    background-color: #262626;
+}
+
+
 /*-----------------------------------> Responsive <-----------------------------------*/
 nav .fas{
     display: none;
