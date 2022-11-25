@@ -214,6 +214,7 @@ nav ul li a:hover::after{
 .certificates-list::-webkit-scrollbar{
     width: 0;
 }
+
 .certificates-list{
     cursor: pointer;
     display: -webkit-flex;
